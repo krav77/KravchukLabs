@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="300" Width="300">
+    <Grid ShowGridLines="True">
+        <!-- Встановлюємо два рядки -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+           
+        </Grid.RowDefinitions>
+        <!-- Встановлюємо три стовпці -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!-- Розміщуємо елементи у сітці -->
+        <Label Grid.Row="0" Grid.Column="1">Label</Label>
+        <WrapPanel HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1">
+            <TextBox>TextBox</TextBox >
+        </WrapPanel>
         
+        <Button Grid.Row="2" Grid.Column="1">Button1</Button>
     </Grid>
+
 </Window>
