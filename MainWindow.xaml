@@ -5,16 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="400">
-    <StackPanel>
-        <Label Content="Label" HorizontalAlignment="Center"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="300"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="300"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="300"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Width="300"/>
-        <Line Height="50"></Line>
-        <Button Content="Button" Width="200"/>
-
-    </StackPanel>
+        Title="MainWindow" Height="300" Width="500">
+    <WrapPanel HorizontalAlignment="Center" Width="450" Height="100" VerticalAlignment="Top">
+        <Label>Label</Label>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <Label>Label</Label>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Width="50" VerticalAlignment="Center"/>
+        <Button Margin="30" Content="Button" RenderTransformOrigin="1.423,0.557"/>
+    </WrapPanel>
 
 </Window>
