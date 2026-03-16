@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labs"
         mc:Ignorable="d"
+<<<<<<< Updated upstream
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
     </Grid>
 </Window>
+=======
+        Title="TextEditor" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button Content="Button" Width="50"/>
+            <Button Content="Button" Width="50"/>
+            <Button Content="Button" Width="50"/>
+            <Button Content="Button" Width="50"/>
+
+        </StackPanel>
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+</Window>
+>>>>>>> Stashed changes
