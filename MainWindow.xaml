@@ -5,14 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="500" 
-        Background="Aqua">
-    <Canvas>
-        <Label Canvas.Top="10" Canvas.Left="20">Label</Label>
-        <TextBox Canvas.Top="30" Canvas.Left="40">text</TextBox>
-        <Button Canvas.Top="50" Canvas.Left ="57">button</Button>
-    </Canvas>
+        Title="TextEditor" Height="300" Width="500">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button Width="50">
+                <Image Source="Image/open_img.png"/>
+            </Button>
+            <Button Width="50">
+                <Image Source="Image/delete_img.png"/>
+            </Button>
+            <Button Width="50">
+                <Image Source="Image/copy_img.png"/>
+            </Button>
+            <Button Width="50">
+                <Image Source="Image/paste_img.png"/>
+            </Button>
 
 
-
+        </StackPanel>
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="0,0,0,80"></Border>
+    </Grid>
 </Window>
