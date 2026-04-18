@@ -58,14 +58,23 @@
                     BorderThickness="2">
 
                 <ScrollViewer>
-                    <TextBox Background="LightGray" BorderThickness="0"/>
+                    <TextBlock Background="LightGray" Text="Text" FontSize="{Binding ElementName=fontSlider, Path=Value}"/>
                 </ScrollViewer>
             </Border>
-            <Button Grid.Row="2"
-                    Content="OK"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Style="{x:Null}"/>
+
+            <DockPanel Grid.Row="2"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center">
+
+                <Label Content="Розмір шрифту:" />
+                <Slider Margin="4" MinWidth="100" Name="fontSlider" Maximum="100" Minimum="12" />
+
+            </DockPanel>
+            <Button
+                Content="OK"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Style="{x:Null}" RenderTransformOrigin="3.701,0.54" Margin="307,7,0,0" Grid.Row="2"/>
         </Grid>
     </Border>
 </Window>
